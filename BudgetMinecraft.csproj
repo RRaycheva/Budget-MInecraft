@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA0C88D1-51BE-4208-B205-1A8B94667058}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BudgetMinecraft</RootNamespace>
+    <AssemblyName>BudgetMinecraft</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Action.Designer.cs">
+      <DependentUpon>Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charcoal.cs" />
+    <Compile Include="Chest.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Furnace.cs" />
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grass.cs" />
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pickaxe.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="AboutItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutItems.Designer.cs">
+      <DependentUpon>AboutItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stone.cs" />
+    <Compile Include="Wood.cs" />
+    <EmbeddedResource Include="Action.resx">
+      <DependentUpon>Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutItems.resx">
+      <DependentUpon>AboutItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="XMLSchema1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8929cbbf4330a81e671040b07bf8e31-min.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojCWDgX-minecraft-background-pics-min.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8929cbbf4330a81e671040b07bf8e31-min1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAVPNG_minecraft-pocket-edition-charcoal-mod-mojang_SCD1aV6c-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAVPNG_minecraft-pocket-edition-xbox-360-rock-ore_byqUq78k-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\http___pluspng.com_img-png_png-furnace-yp5awua-png-2-555-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMGBIN_minecraft-mods-plank-wood-item-png_mUzaRGp3-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-1816996_1920-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-2053886_1280-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-chest-png-3-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-man-png-5-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojCWDgX-minecraft-background-pics-min1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngguru.com-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minecraft-1816996_1920-min1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="XMLFile1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BM_Library\BM_Library.csproj">
+      <Project>{919d6c25-5d19-4fcf-b477-f40d67d1a40a}</Project>
+      <Name>BM_Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

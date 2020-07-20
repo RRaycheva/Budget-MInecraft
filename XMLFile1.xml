@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+	
+<Items>
+	<item id ="Charcoal">
+		<IsThereDroppedItem>Don't have drop item</IsThereDroppedItem>
+		<CanBeMelted>When we melt it we get stone</CanBeMelted>
+		
+	</item>
+  <item id ="Chest">
+	  <IsThereDroppedItem>Don't have drop item</IsThereDroppedItem>
+      <CanBeMelted>We can't melt it</CanBeMelted>
+	 
+  </item>
+  <item id="Furnace">
+	  <IsThereDroppedItem>Don't have drop item</IsThereDroppedItem>
+      <CanBeMelted>We can't melt it</CanBeMelted>
+	  
+  </item>
+  <item id="Grass">
+	  <IsThereDroppedItem>There is a dropped item -stone;</IsThereDroppedItem>
+      <CanBeMelted>We can't melt it;</CanBeMelted>  
+	 
+  </item>
+  <item id ="Pickaxe">
+	  <IsThereDroppedItem>There is a dropped item - wood;</IsThereDroppedItem>
+	  <CanBeMelted>We can't melt it;</CanBeMelted>
+	 
+  </item>
+  <item id="Stone">
+	  <IsThereDroppedItem>There is a dropped item -grass;</IsThereDroppedItem>
+    <CanBeMelted>We can't melt it;</CanBeMelted>
+	 
+  </item>
+  <item id="Wood">
+	  <IsThereDroppedItem>Don't have drop item</IsThereDroppedItem>
+     <CanBeMelted>When we melt it we get charcoal</CanBeMelted> 
+	  
+  </item>
+</Items>
